@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserva tu mesa en La Pollería - El mejor pollo a la brasa">
+    <title>Reservaciones - La Pollería</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="La Pollería Logo">
+                <span>La Pollería</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="menu.html" class="nav-link">Menú</a></li>
+                    <li><a href="../index.html#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="../index.html#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="../index.html#ubicacion" class="nav-link">Ubicación</a></li>
+                    <li><a href="reservation.html" class="nav-link active">Reservaciones</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/51999999999" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Pedir Ahora
+                </a>
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Reservaciones</h1>
+            <p>Reserva tu mesa y disfruta de una experiencia gastronómica inigualable</p>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section class="reservation-section">
+        <div class="container">
+            <form class="reservation-form" id="reservationForm">
+                <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary-color);">Haz tu Reservación</h2>
+
+                <div class="form-group">
+                    <label for="name">Nombre Completo *</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Teléfono *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+51 999 999 999" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email (opcional)</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Fecha *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Hora *</label>
+                        <select id="time" name="time" required>
+                            <option value="">Selecciona una hora</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">Número de Personas *</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Selecciona cantidad</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="5">5 personas</option>
+                        <option value="6">6 personas</option>
+                        <option value="7">7 personas</option>
+                        <option value="8">8 personas</option>
+                        <option value="9">9 personas</option>
+                        <option value="10">10 personas</option>
+                        <option value="more">Más de 10 personas</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Notas Especiales (opcional)</label>
+                    <textarea id="notes" name="notes" placeholder="Alergias, celebraciones, preferencias de mesa, etc."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full" style="margin-top: 20px;">
+                    <i class="fab fa-whatsapp"></i> Enviar Reservación
+                </button>
+
+                <p style="text-align: center; margin-top: 20px; color: var(--text-light); font-size: 0.9rem;">
+                    <i class="fas fa-info-circle"></i> Te contactaremos por WhatsApp para confirmar tu reservación
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="about" style="padding: 60px 20px;">
+        <div class="container">
+            <div class="about-features" style="justify-content: center; gap: 60px;">
+                <div class="feature">
+                    <i class="fas fa-concierge-bell"></i>
+                    <span>Servicio Personalizado</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-wine-glass-alt"></i>
+                    <span>Ambiente Familiar</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>Celebraciones</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-parking"></i>
+                    <span>Estacionamiento</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>La Pollería</h3>
+                    <p>El mejor pollo a la brasa desde 2005. Calidad y sabor en cada bocado.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="../index.html#nosotros">Nosotros</a></li>
+                        <li><a href="reservation.html">Reservaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +51 999 999 999</li>
+                        <li><i class="fas fa-envelope"></i> contacto@lapolleria.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe ofertas exclusivas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Pollería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/51999999999?text=Hola,%20quiero%20hacer%20un%20pedido" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Mi Pedido</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">S/ 0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">
+                <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/reservation.js"></script>
+</body>
+</html>

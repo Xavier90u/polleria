@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con La Pollería - El mejor pollo a la brasa">
+    <title>Contacto - La Pollería</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="La Pollería Logo">
+                <span>La Pollería</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="menu.html" class="nav-link">Menú</a></li>
+                    <li><a href="../index.html#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="../index.html#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="../index.html#ubicacion" class="nav-link">Ubicación</a></li>
+                    <li><a href="reservation.html" class="nav-link">Reservaciones</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/51999999999" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Pedir Ahora
+                </a>
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para atenderte</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="reservation-section">
+        <div class="container">
+            <div class="location-grid">
+                <!-- Contact Info -->
+                <div class="location-info">
+                    <h2 class="section-title" style="text-align: left;">Información de Contacto</h2>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Av. Principal 123, Centro Comercial</p>
+                            <p>Lima, Perú</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+51 999 999 999</p>
+                            <p style="font-size: 0.9rem; color: var(--text-light);">Llamadas y WhatsApp</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contacto@lapolleria.com</p>
+                            <p>reservas@lapolleria.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horario de Atención</h3>
+                            <p>Lunes - Sábado: 11:00 AM - 10:00 PM</p>
+                            <p>Domingos: 11:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links" style="margin-top: 30px;">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="reservation-form" style="max-width: 100%;">
+                    <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary-color);">Envíanos un Mensaje</h2>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Nombre *</label>
+                            <input type="text" id="contactName" name="name" placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactEmail">Email *</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Teléfono</label>
+                                <input type="tel" id="contactPhone" name="phone" placeholder="+51 999 999 999">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Asunto *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="pedido">Consulta sobre Pedido</option>
+                                <option value="reservacion">Reservación</option>
+                                <option value="evento">Evento Especial</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="reclamo">Reclamo</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="location" style="padding: 60px 20px;">
+        <div class="container">
+            <h2 class="section-title">Encuéntranos</h2>
+            <div class="location-map" style="margin-top: 30px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0!2d-76.0!3d-12.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAwJzAwLjAiUyA3NsKwMDAnMDAuMCJX!5e0!3m2!1ses!2spe!4v1234567890" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>La Pollería</h3>
+                    <p>El mejor pollo a la brasa desde 2005. Calidad y sabor en cada bocado.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="../index.html#nosotros">Nosotros</a></li>
+                        <li><a href="reservation.html">Reservaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +51 999 999 999</li>
+                        <li><i class="fas fa-envelope"></i> contacto@lapolleria.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe ofertas exclusivas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Pollería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/51999999999?text=Hola,%20quiero%20hacer%20un%20pedido" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Mi Pedido</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">S/ 0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">
+                <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    <script>
+        // Contact Form Handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const phone = document.getElementById('contactPhone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Build WhatsApp message
+            let whatsappMessage = '¡Hola! Me comunico desde la página web:\n\n';
+            whatsappMessage += `👤 Nombre: ${name}\n`;
+            whatsappMessage += `📧 Email: ${email}\n`;
+            if (phone) whatsappMessage += `📱 Teléfono: ${phone}\n`;
+            whatsappMessage += `📋 Asunto: ${subject}\n`;
+            whatsappMessage += `💬 Mensaje: ${message}\n`;
+
+            // Open WhatsApp
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            window.open(`https://wa.me/51999999999?text=${encodedMessage}`, '_blank');
+
+            // Reset form
+            this.reset();
+            
+            // Show success message
+            alert('¡Mensaje enviado! Te redirigimos a WhatsApp.');
+        });
+    </script>
+</body>
+</html>

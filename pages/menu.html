@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menú completo de La Pollería - Pollo a la brasa, entradas, acompañamientos y bebidas">
+    <title>Menú - La Pollería</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="La Pollería Logo">
+                <span>La Pollería</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="menu.html" class="nav-link active">Menú</a></li>
+                    <li><a href="../index.html#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="../index.html#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="../index.html#ubicacion" class="nav-link">Ubicación</a></li>
+                    <li><a href="reservation.html" class="nav-link">Reservaciones</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/51999999999" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Pedir Ahora
+                </a>
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestro Menú</h1>
+            <p>Descubre todos nuestros deliciosos platos preparados con amor</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="reservation-section">
+        <div class="container">
+            <!-- Filters -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="combos">Combos</button>
+                <button class="filter-btn" data-filter="pollos">Pollos</button>
+                <button class="filter-btn" data-filter="entradas">Entradas</button>
+                <button class="filter-btn" data-filter="acompañamientos">Acompañamientos</button>
+                <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+            </div>
+
+            <!-- Combos -->
+            <div class="menu-category" data-category="combos">
+                <h2>Combos</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/combo-personal.jpg" alt="Combo Personal">
+                            <span class="price">S/ 28.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Combo Personal</h3>
+                            <p>1/4 de pollo a la brasa + papas fritas + gaseosa 500ml</p>
+                            <button class="btn btn-add-cart" data-name="Combo Personal" data-price="28">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/combo-pareja.jpg" alt="Combo Pareja">
+                            <span class="price">S/ 52.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Combo Pareja</h3>
+                            <p>1/2 pollo + papas + ensalada + 2 gaseosas</p>
+                            <button class="btn btn-add-cart" data-name="Combo Pareja" data-price="52">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/combo-familiar.jpg" alt="Combo Familiar">
+                            <span class="price">S/ 89.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Combo Familiar</h3>
+                            <p>2 pollos enteros + papas + ensalada + 4 gaseosas</p>
+                            <button class="btn btn-add-cart" data-name="Combo Familiar" data-price="89">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/combo-fiesta.jpg" alt="Combo Fiesta">
+                            <span class="price">S/ 120.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Combo Fiesta</h3>
+                            <p>3 pollos enteros + todas las guarniciones + 6 gaseosas</p>
+                            <button class="btn btn-add-cart" data-name="Combo Fiesta" data-price="120">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pollos -->
+            <div class="menu-category" data-category="pollos">
+                <h2>Pollos a la Brasa</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/pollo-entero.jpg" alt="Pollo Entero">
+                            <span class="price">S/ 35.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Pollo Entero</h3>
+                            <p>Pollo completo a la brasa con papas fritas y ensalada</p>
+                            <button class="btn btn-add-cart" data-name="Pollo Entero" data-price="35">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/pollo-mitad.jpg" alt="Medio Pollo">
+                            <span class="price">S/ 22.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Medio Pollo</h3>
+                            <p>Media porción de pollo con guarniciones</p>
+                            <button class="btn btn-add-cart" data-name="Medio Pollo" data-price="22">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/cuarto-pollo.jpg" alt="Cuarto de Pollo">
+                            <span class="price">S/ 14.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Cuarto de Pollo</h3>
+                            <p>Una cuarta parte con papas y ensalada</p>
+                            <button class="btn btn-add-cart" data-name="Cuarto de Pollo" data-price="14">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/pechuga.jpg" alt="Pechuga a la Plancha">
+                            <span class="price">S/ 18.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Pechuga a la Plancha</h3>
+                            <p>Pechuga jugosa sin piel, ideal para dietas</p>
+                            <button class="btn btn-add-cart" data-name="Pechuga a la Plancha" data-price="18">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entradas -->
+            <div class="menu-category" data-category="entradas">
+                <h2>Entradas</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/papas.jpg" alt="Papas Fritas">
+                            <span class="price">S/ 8.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Papas Fritas</h3>
+                            <p>Papas fritas crocantes con salsa especial</p>
+                            <button class="btn btn-add-cart" data-name="Papas Fritas" data-price="8">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/ensalada.jpg" alt="Ensalada Fresca">
+                            <span class="price">S/ 10.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Ensalada Fresca</h3>
+                            <p>Ensalada mixta con aderezo de la casa</p>
+                            <button class="btn btn-add-cart" data-name="Ensalada Fresca" data-price="10">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/yuca.jpg" alt="Yuca Frita">
+                            <span class="price">S/ 9.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Yuca Frita</h3>
+                            <p>Yuca frita dorada con salsa de ajo</p>
+                            <button class="btn btn-add-cart" data-name="Yuca Frita" data-price="9">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/choclo.jpg" alt="Choclo con Queso">
+                            <span class="price">S/ 12.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Choclo con Queso</h3>
+                            <p>Choclo fresco con queso derretido</p>
+                            <button class="btn btn-add-cart" data-name="Choclo con Queso" data-price="12">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acompañamientos -->
+            <div class="menu-category" data-category="acompañamientos">
+                <h2>Acompañamientos</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/arroz.jpg" alt="Arroz">
+                            <span class="price">S/ 5.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Arroz</h3>
+                            <p>Arroz blanco preparado</p>
+                            <button class="btn btn-add-cart" data-name="Arroz" data-price="5">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/frijoles.jpg" alt="Frijoles">
+                            <span class="price">S/ 5.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Frijoles</h3>
+                            <p>Frijoles negros refritos</p>
+                            <button class="btn btn-add-cart" data-name="Frijoles" data-price="5">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/tomate.jpg" alt="Ensalada de Tomate">
+                            <span class="price">S/ 6.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Ensalada de Tomate</h3>
+                            <p>Tomate, cebolla y cilantro</p>
+                            <button class="btn btn-add-cart" data-name="Ensalada de Tomate" data-price="6">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/huancaína.jpg" alt="Papa a la Huancaína">
+                            <span class="price">S/ 8.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Papa a la Huancaína</h3>
+                            <p>Papa con salsa huancaína</p>
+                            <button class="btn btn-add-cart" data-name="Papa a la Huancaína" data-price="8">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div class="menu-category" data-category="bebidas">
+                <h2>Bebidas</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/gaseosa.jpg" alt="Gaseosa">
+                            <span class="price">S/ 8.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Gaseosa 1.5L</h3>
+                            <p>Coca-Cola, Sprite o Fanta</p>
+                            <button class="btn btn-add-cart" data-name="Gaseosa 1.5L" data-price="8">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/jugo.jpg" alt="Jugo Natural">
+                            <span class="price">S/ 6.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Jugo Natural</h3>
+                            <p>Naranja, Limón o Maracuyá</p>
+                            <button class="btn btn-add-cart" data-name="Jugo Natural" data-price="6">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/agua.jpg" alt="Agua Mineral">
+                            <span class="price">S/ 3.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Agua Mineral</h3>
+                            <p>Con o sin gas</p>
+                            <button class="btn btn-add-cart" data-name="Agua Mineral" data-price="3">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-image">
+                            <img src="../images/menu/chicha.jpg" alt="Chicha Morada">
+                            <span class="price">S/ 5.00</span>
+                        </div>
+                        <div class="menu-card-content">
+                            <h3>Chicha Morada</h3>
+                            <p>Tradicional chicha morada</p>
+                            <button class="btn btn-add-cart" data-name="Chicha Morada" data-price="5">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>La Pollería</h3>
+                    <p>El mejor pollo a la brasa desde 2005. Calidad y sabor en cada bocado.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="../index.html#nosotros">Nosotros</a></li>
+                        <li><a href="reservation.html">Reservaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +51 999 999 999</li>
+                        <li><i class="fas fa-envelope"></i> contacto@lapolleria.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe ofertas exclusivas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Pollería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/51999999999?text=Hola,%20quiero%20hacer%20un%20pedido" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Mi Pedido</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">S/ 0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">
+                <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>
