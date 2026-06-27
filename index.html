@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[TU DESCRIPCIÓN] Pedidos en línea, delivery y reservaciones.">
+    <meta name="keywords" content="[TUS PALABRAS CLAVE]">
+    <meta property="og:title" content="[TU NOMBRE] - Pollo a la Brasa">
+    <meta property="og:description" content="[TU DESCRIPCIÓN]">
+    <meta property="og:type" content="restaurant">
+    <title>[TU NOMBRE] - Pollo a la Brasa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="La Pollería Logo">
+                <span>La Pollería</span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#menu" class="nav-link">Menú</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+                    <li><a href="pages/reservation.html" class="nav-link">Reservaciones</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/TU_NUMERO" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Pedir Ahora
+                </a>
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>El Mejor Pollo a la Brasa</h1>
+            <p>Preparado con recetas tradicionales y los ingredientes más frescos</p>
+            <div class="hero-buttons">
+                <a href="pages/menu.html" class="btn btn-primary">Ver Menú</a>
+                <a href="https://wa.me/51999999999?text=Hola,%20quiero%20hacer%20un%20pedido" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-whatsapp"></i> Ordenar por WhatsApp
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero/pollo-hero.png" alt="Pollo a la brasa appetitoso">
+        </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section class="menu-highlights" id="menu">
+        <div class="container">
+            <h2 class="section-title">Nuestros Platos Estrella</h2>
+            <p class="section-subtitle">Descubre nuestros favoritos</p>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="images/menu/pollo-entero.jpg" alt="Pollo entero a la brasa">
+                        <span class="price">S/ 35.00</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Pollo Entero</h3>
+                        <p>Pollo completo a la brasa con papas fritas y ensalada</p>
+                        <button class="btn btn-add-cart" data-name="Pollo Entero" data-price="35">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="images/menu/pollo-mitad.jpg" alt="Medio pollo a la brasa">
+                        <span class="price">S/ 22.00</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Medio Pollo</h3>
+                        <p>Media porción de pollo con guarniciones</p>
+                        <button class="btn btn-add-cart" data-name="Medio Pollo" data-price="22">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="images/menu/cuarto-pollo.jpg" alt="Cuarto de pollo a la brasa">
+                        <span class="price">S/ 14.00</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Cuarto de Pollo</h3>
+                        <p>Una cuarta parte con papas y ensalada</p>
+                        <button class="btn btn-add-cart" data-name="Cuarto de Pollo" data-price="14">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="images/menu/combo-familiar.jpg" alt="Combo familiar">
+                        <span class="price">S/ 89.00</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3>Combo Familiar</h3>
+                        <p>2 pollos enteros, papas grandes, ensalada y 4 gaseosas</p>
+                        <button class="btn btn-add-cart" data-name="Combo Familiar" data-price="89">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <a href="pages/menu.html" class="btn btn-outline">Ver Menú Completo</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p class="lead">Más de 20 años preparando el pollo a la brasa más delicioso de la ciudad.</p>
+                    <p>En La Pollería, nos dedicamos a ofrecer el mejor pollo a la brasa preparado con recetas tradicionales transmitidas de generación en generación. Utilizamos ingredientes frescos y de la más alta calidad para garantizar que cada bocado sea una experiencia inigualable.</p>
+                    <p>Nuestro secreto está en la sazonación perfecta y el punto de cocción ideal que logramos con nuestro horno especial de carbón vegetal.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-fire"></i>
+                            <span>Horno de Carbón</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Ingredientes Frescos</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Recetas Tradicionales</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="Nuestro local">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <h2 class="section-title">Galería</h2>
+            <p class="section-subtitle">Momentos que hacen única nuestra pollería</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery/1.jpg" alt="Pollo preparándose">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/2.jpg" alt="Nuestro local">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/3.jpg" alt="Plato servido">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/4.jpg" alt="Nuestro equipo">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours -->
+    <section class="location" id="ubicacion">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-info">
+                    <h2 class="section-title">Encuéntranos</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>[TU DIRECCIÓN COMPLETA]</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>[TU NÚMERO]</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>[TU EMAIL]</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horario</h3>
+                            <p>Lunes - Sábado: 11:00 AM - 10:00 PM</p>
+                            <p>Domingos: 11:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0!2d-76.0!3d-12.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAwJzAwLjAiUyA3NsKwMDAnMDAuMCJX!5e0!3m2!1ses!2spe!4v1234567890" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>La Pollería</h3>
+                    <p>El mejor pollo a la brasa desde 2005. Calidad y sabor en cada bocado.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="pages/reservation.html">Reservaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +51 999 999 999</li>
+                        <li><i class="fas fa-envelope"></i> contacto@lapolleria.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Principal 123</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe ofertas exclusivas</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 La Pollería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/51999999999?text=Hola,%20quiero%20hacer%20un%20pedido" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Mi Pedido</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">S/ 0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">
+                <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Lightbox for Gallery -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img src="" alt="Gallery Image" id="lightboxImg">
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
