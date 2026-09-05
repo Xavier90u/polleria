@@ -1,0 +1,13 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": true,
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
